@@ -13,14 +13,15 @@ lists = {
 		that.listTitle = "List";
 		that.newItem = ko.observable();
 		
-		that.toDoList = ko.observableArray([
-			{name: "crap"},
-			{name: "whyy"}
-		]);
+		that.toDoList = ko.observableArray();
 		that.doneList = ko.observableArray();
 		
 		that.addListItems = function(){
 			that.toDoList.push({name:that.newItem()});
+		}
+		
+		that.removeListItems = function(list){
+			that.toDoList.remove(this);
 		}
 	},
 	eventBindings:function(){

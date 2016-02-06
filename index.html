@@ -39,8 +39,8 @@
 				  <button type="submit" class="btn btn-default">Add</button>
 				</form>
 				<ul class="list-group to-do-list" data-bind="foreach: toDoList">
-					<li class="list-group-item checkbox">
-						<label><input type="checkbox" data-bind="value: name" /><span data-bind="text: name"></span></label>
+					<li class="list-group-item checkbox clearfix">
+						<label><input type="checkbox" data-bind="value: name" /><span data-bind="text: name"></span><button class="btn btn-danger pull-right" data-bind="click: $parent.removeListItems">Delete</button></label>
 					</li>
 				</ul>
 				
