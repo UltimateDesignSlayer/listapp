@@ -1,0 +1,4 @@
+.list-group li label {
+  display: block; }
+.list-group.done-list li {
+  background: #9effaf; }

@@ -1,0 +1,13 @@
+.list-group{	
+	li{
+		label{
+			display:block;
+		}
+	}
+	
+	&.done-list{
+		li{
+			background:#9effaf;
+		}	
+	}
+}
