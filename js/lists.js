@@ -21,6 +21,9 @@ lists = {
 			that.toDoList.push({name:that.newItem(), desc:that.newItemDesc()});
 			localStorage.setItem('toDoList', that.toDoList());
 			localStorage.setItem('doneList', that.doneList());
+			
+			that.newItem = ko.observable();
+			that.newItemDesc = ko.observable();
 		}
 		
 		that.removeListItems = function(list){
@@ -44,6 +47,7 @@ lists = {
 	eventBindings:function(){
 		$('#addNewItemsForm').submit(function(){
 			$('input', this).val('');
+			$('#itemToAdd').focus();
 		});
 	}
 }
