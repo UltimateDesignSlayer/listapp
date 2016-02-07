@@ -1,4 +1,15 @@
-.list-group li label {
-  display: block; }
+.list-group li > div {
+  display: table;
+  width: 100%; }
+  .list-group li > div div.text-container {
+    float: left; }
+  .list-group li > div .list-title {
+    display: table-cell;
+    vertical-align: middle; }
+  .list-group li > div .notes-holder {
+    color: #888888;
+    font-style: italic; }
 .list-group.done-list li {
   background: #9effaf; }
+  .list-group.done-list li div .list-title {
+    text-decoration: line-through; }
